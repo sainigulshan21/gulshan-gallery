@@ -1,0 +1,137 @@
+:root {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, rgb(131, 120, 120), white);
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    justify-content: center;
+}
+.head{
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color:black;
+}
+
+.box{
+    height: 25rem;
+    width: 40rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.container1{
+    height: 100%;
+    width: 25%;
+    background-color: white;
+}
+
+label{
+    height: 6rem;
+    width: 10rem;
+}
+
+label img{
+    height: 6rem;
+    width: 10rem;
+    opacity: .5;
+    transition: .7s;
+}
+
+label img:hover{
+    opacity: 1;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px 2px black;
+}
+
+
+div.container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container2{
+    height: 25rem;
+    width: 74%;
+    background-color: white;
+}
+.ph1{
+  visibility: hidden;  
+}
+.ph2{
+  visibility: hidden;  
+}
+.ph3{
+  visibility: hidden;  
+}
+.ph4{
+  visibility: hidden;  
+}
+
+.ph1 img{
+    height: 25rem;
+    width: 29.5rem;
+    position: absolute;
+}
+.ph2 img{
+    height: 25rem;
+    width: 29.5rem;
+    position: absolute;
+}
+.ph3 img{
+    height: 25rem;
+    width: 29.5rem;
+    position: absolute;
+}
+.ph4 img{
+    height: 25rem;
+    width: 29.5rem;
+    position: absolute;
+}
+
+#p1:checked~.box .container2 .ph1{
+    visibility: visible;
+}
+#p2:checked~.box .container2 .ph2{
+    visibility: visible;
+}
+#p3:checked~.box .container2 .ph3{
+    visibility: visible;
+}
+#p4:checked~.box .container2 .ph4{
+    visibility: visible;
+}
+
+input[type="radio"]{
+    visibility: hidden;
+}
+
+
+.container2 div{
+    transition: 1s;
+}
+.container2 div:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 8px 2px black;
+}
+
+.ph1 img:hover{
+    box-shadow: 4px 4px 8px 4px black;
+}
+.ph2 img:hover{
+box-shadow: 4px 4px 8px 4px black;
+}
+.ph3 img:hover{
+box-shadow: 4px 4px 8px 4px black;
+}
+.ph4 img:hover{
+box-shadow: 4px 4px 8px 4px black;
+}
